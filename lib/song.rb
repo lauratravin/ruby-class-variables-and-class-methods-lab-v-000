@@ -7,7 +7,7 @@ class Song
 
 attr_accessor :name, :artist, :genre
 
-   def initialized(s,a,g)
+   def initialize(s,a,g)
      @name = s
      @artist = a
      @genre = g
@@ -20,7 +20,7 @@ attr_accessor :name, :artist, :genre
        else
          @@artist_count[a] = 1
        end
-    #  end   
+    #  end
    end
 
 
