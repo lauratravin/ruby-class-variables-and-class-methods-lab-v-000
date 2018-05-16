@@ -27,6 +27,7 @@ attr_accessor :name, :artist, :genre
        end
 
         @@genres << g
+        @@artists << a
 
       cal_artists  #insance method
    end
@@ -40,16 +41,6 @@ attr_accessor :name, :artist, :genre
    def self.genre_count
        @@genre_count
    end
-   def cal_artists #this is to modify the class variable if method is not call
-       @@artist_count.keys.each { |chr|
-               @@artists << chr
-        }
-   end
-  #  def cal_genres  #same
-  #      @@genre_count.keys.each { |chr|
-  #              @@genres << chr
-  #       }
-  #  end
 
    def self.artists   #this is for the class
        @@artist_count.keys.each { |chr|
