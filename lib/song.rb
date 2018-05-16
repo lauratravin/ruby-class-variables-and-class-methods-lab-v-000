@@ -25,7 +25,9 @@ attr_accessor :name, :artist, :genre
        else
          @@genre_count[g] = 1
        end
-      cal_genres #insance method
+       @@genre_count.keys.each { |chr|
+               @@genres << chr
+        }
       cal_artists  #insance method
    end
 
@@ -43,11 +45,11 @@ attr_accessor :name, :artist, :genre
                @@artists << chr
         }
    end
-   def cal_genres  #same
-       @@genre_count.keys.each { |chr|
-               @@genres << chr
-        }
-   end
+  #  def cal_genres  #same
+  #      @@genre_count.keys.each { |chr|
+  #              @@genres << chr
+  #       }
+  #  end
 
    def self.artists   #this is for the class
        @@artist_count.keys.each { |chr|
