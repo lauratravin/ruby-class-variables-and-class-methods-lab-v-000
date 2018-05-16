@@ -16,10 +16,10 @@ class Song
          @@artist_count[a] = 1
        end
 
-       if @@gerne_count.keys.include?(g)
-         @@gerne_count[g] += 1
+       if @@genre_count.keys.include?(g)
+         @@genre_count[g] += 1
        else
-         @@gerne_count[g] = 1
+         @@genre_count[g] = 1
        end
 
    end
