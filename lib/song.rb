@@ -25,7 +25,8 @@ attr_accessor :name, :artist, :genre
        else
          @@genre_count[g] = 1
        end
-       self.obgenre
+      obgenres
+      obartists
    end
 
    def self.count
@@ -37,12 +38,12 @@ attr_accessor :name, :artist, :genre
    def self.genre_count
        @@genre_count
    end
-   def self.artists
+   def obartists
        @@artist_count.keys.each { |chr|
                @@artists << chr
         }
    end
-   def obgenre
+   def obgenres
        @@genre_count.keys.each { |chr|
                @@genres << chr
         }
