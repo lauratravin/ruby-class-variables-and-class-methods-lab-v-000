@@ -46,7 +46,7 @@ attr_accessor :name, :artist, :genre
        @@genre_count.keys.each { |chr|
                @@genres << chr
         }
-        @@genres
+        return  @@genres
    end
 
 end
