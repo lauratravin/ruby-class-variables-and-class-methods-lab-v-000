@@ -38,12 +38,12 @@ attr_accessor :name, :artist, :genre
    def self.genre_count
        @@genre_count
    end
-   def artists
+   def cal_artists #this is to modify the class variable if method is not call
        @@artist_count.keys.each { |chr|
                @@artists << chr
         }
    end
-   def genres
+   def cal_genres  #same
        @@genre_count.keys.each { |chr|
                @@genres << chr
         }
