@@ -26,7 +26,7 @@ attr_accessor :name, :artist, :genre
          @@genre_count[g] = 1
        end
 
-        @@genres = g
+        @@genres << g
 
       cal_artists  #insance method
    end
