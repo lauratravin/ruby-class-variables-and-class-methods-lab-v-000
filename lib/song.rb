@@ -42,5 +42,10 @@ attr_accessor :name, :artist, :genre
                @@artists << chr
         }
    end
+   def self.genres
+       @@genre_count.keys.each { |chr|
+               @@genres << chr
+        }
+   end
 
 end
