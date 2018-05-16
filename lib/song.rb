@@ -38,16 +38,16 @@ attr_accessor :name, :artist, :genre
    def self.genre_count
        @@genre_count
    end
-  #  def artists
-  #      @@artist_count.keys.each { |chr|
-  #              @@artists << chr
-  #       }
-  #  end
-  #  def genres
-  #      @@genre_count.keys.each { |chr|
-  #              @@genres << chr
-  #       }
-  #  end
+   def artists
+       @@artist_count.keys.each { |chr|
+               @@artists << chr
+        }
+   end
+   def genres
+       @@genre_count.keys.each { |chr|
+               @@genres << chr
+        }
+   end
 
    def self.artists
        @@artist_count.keys.each { |chr|
