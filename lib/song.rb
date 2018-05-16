@@ -15,7 +15,7 @@ attr_accessor :name, :artist, :genre
     #  if @@artist_count.empty?
     #    @@artist_count[a] = 1
     #  else
-       if artist_count.keys.include?(a)
+       if @@artist_count.keys.include?(a)
          @@artist_count[a] += 1
        else
          @@artist_count[a] = 1
