@@ -25,8 +25,8 @@ attr_accessor :name, :artist, :genre
        else
          @@genre_count[g] = 1
        end
-      genres
-      artists
+      self.genres
+      self.artists
    end
 
    def self.count
