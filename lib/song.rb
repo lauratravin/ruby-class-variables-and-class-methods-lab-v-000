@@ -29,7 +29,7 @@ attr_accessor :name, :artist, :genre
         @@genres << g
         @@artists << a
 
-      cal_artists  #insance method
+    
    end
 
    def self.count
